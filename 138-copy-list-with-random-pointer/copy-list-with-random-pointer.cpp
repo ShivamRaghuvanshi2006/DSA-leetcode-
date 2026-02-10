@@ -3,7 +3,7 @@ public:
     Node* copyRandomList(Node* head) {
         if (!head) return nullptr;
 
-        // Step 1: Insert copied nodes after original nodes
+        
         Node* curr = head;
         while (curr) {
             Node* copy = new Node(curr->val);
@@ -12,7 +12,7 @@ public:
             curr = copy->next;
         }
 
-        // Step 2: Assign random pointers
+       
         curr = head;
         while (curr) {
             if (curr->random) {
@@ -21,7 +21,7 @@ public:
             curr = curr->next->next;
         }
 
-        // Step 3: Separate the two lists
+        
         curr = head;
         Node* copyHead = head->next;
 
