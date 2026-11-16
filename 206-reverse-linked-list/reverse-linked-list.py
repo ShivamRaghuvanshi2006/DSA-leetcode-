@@ -1,8 +1,5 @@
 class Solution:
     def reverseList(self, head):
-        prev = None
-        while head:
-            nxt = head.next
-            head.next = prev
-            prev, head = head, nxt
-        return prev
+        p=None
+        while head: head.next,head,p=p,head.next,head
+        return p
