@@ -43,9 +43,22 @@ The problem-level README contains the problem statement and examples. The source
 
 ## Running a solution
 
-Most files follow the format expected by LeetCode rather than being complete standalone programs. For example, a solution may depend on LeetCode-provided types such as `TreeNode` or `ListNode`, and may not include a `main` method.
+These files are primarily written in the format expected by LeetCode. Some use LeetCode-provided classes such as `TreeNode` or `ListNode`, so they may need a small driver program and the relevant data structures before they can run as standalone files.
 
-To run a solution locally, use the matching problem's test harness or create a small driver program that supplies the required data structures and test cases. Use the compiler/runtime version required by the selected language.
+For a local Java solution:
+
+```bash
+javac Solution.java
+java Solution
+```
+
+For a standalone Python solution:
+
+```bash
+python solution.py
+```
+
+Use the actual filename in the selected problem folder. C++ solutions require a C++17-compatible compiler unless the individual solution specifies otherwise.
 
 ## Contributing
 
