@@ -1,0 +1,1 @@
+class Solution { public int[] shuffle(int[] n,int k){ int[] r=new int[n.length]; for(int i=0;i<k;i++){ r[2*i]=n[i]; r[2*i+1]=n[i+k]; } return r; } }
