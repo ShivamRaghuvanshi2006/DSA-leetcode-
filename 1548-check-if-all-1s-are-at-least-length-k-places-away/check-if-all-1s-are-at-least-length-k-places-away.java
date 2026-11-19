@@ -1,0 +1,1 @@
+class Solution { public boolean kLengthApart(int[] n,int k){ int p=-100000; for(int i=0;i<n.length;i++) if(n[i]==1){ if(i-p-1<k&&p!=-100000) return false; p=i; } return true; } }
