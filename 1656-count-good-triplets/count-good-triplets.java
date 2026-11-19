@@ -1,0 +1,1 @@
+class Solution { public int countGoodTriplets(int[] a,int x,int y,int z){ int c=0; for(int i=0;i<a.length;i++) for(int j=i+1;j<a.length;j++) if(Math.abs(a[i]-a[j])<=x) for(int k=j+1;k<a.length;k++) if(Math.abs(a[j]-a[k])<=y&&Math.abs(a[i]-a[k])<=z) c++; return c; } }
