@@ -1,0 +1,1 @@
+class Solution { public int maxScore(String s){ int best=0; for(int i=1;i<s.length();i++){ int sc=0; for(int j=0;j<i;j++) if(s.charAt(j)==48) sc++; for(int j=i;j<s.length();j++) if(s.charAt(j)==49) sc++; best=Math.max(best,sc); } return best; } }
