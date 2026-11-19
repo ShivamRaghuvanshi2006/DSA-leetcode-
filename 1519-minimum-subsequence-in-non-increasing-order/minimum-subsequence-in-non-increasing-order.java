@@ -1,0 +1,1 @@
+import java.util.*; class Solution { public List<Integer> minSubsequence(int[] n){ Arrays.sort(n); List<Integer> r=new ArrayList<>(); int tot=0; for(int x:n) tot+=x; int s=0; for(int i=n.length-1;i>=0;i--){ s+=n[i]; r.add(n[i]); if(s>tot-s) break; } return r; } }
