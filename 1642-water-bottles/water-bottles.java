@@ -1,0 +1,1 @@
+class Solution { public int numWaterBottles(int n,int e){ int r=n; while(n>=e){ int t=n/e; r+=t; n=n%e+t; } return r; } }
