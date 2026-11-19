@@ -1,0 +1,1 @@
+import java.util.*; class Solution { public boolean canBeEqual(int[] t,int[] a){ Arrays.sort(t); Arrays.sort(a); return Arrays.equals(t,a); } }
