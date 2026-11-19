@@ -1,0 +1,1 @@
+class Solution { public int numIdenticalPairs(int[] n){ int[] c=new int[101]; int r=0; for(int x:n){ r+=c[x]; c[x]++; } return r; } }
