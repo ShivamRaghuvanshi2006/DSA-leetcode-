@@ -1,0 +1,1 @@
+import java.util.*; class Solution { public String makeGood(String s){ Deque<Character> st=new ArrayDeque<>(); for(int i=0;i<s.length();i++){ char c=s.charAt(i); if(!st.isEmpty()&&Math.abs(st.peek()-c)==32) st.pop(); else st.push(c); } StringBuilder b=new StringBuilder(); while(!st.isEmpty()) b.append(st.removeLast()); return b.toString(); } }
