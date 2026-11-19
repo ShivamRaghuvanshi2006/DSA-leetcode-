@@ -1,0 +1,1 @@
+class Solution { public int findKthPositive(int[] a,int k){ int i=0; for(;i<a.length;i++) if(a[i]-i-1>=k) break; return i+k; } }
