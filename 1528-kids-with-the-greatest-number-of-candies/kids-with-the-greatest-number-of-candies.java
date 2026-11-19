@@ -1,0 +1,1 @@
+import java.util.*; class Solution { public List<Boolean> kidsWithCandies(int[] c,int e){ int m=0; for(int x:c) m=Math.max(m,x); List<Boolean> r=new ArrayList<>(); for(int x:c) r.add(x+e>=m); return r; } }
