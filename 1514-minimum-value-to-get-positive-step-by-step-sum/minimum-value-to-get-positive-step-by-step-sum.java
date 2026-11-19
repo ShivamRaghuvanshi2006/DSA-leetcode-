@@ -1,0 +1,1 @@
+class Solution { public int minStartValue(int[] n){ int s=0,m=0; for(int x:n){ s+=x; m=Math.min(m,s); } return 1-m; } }
