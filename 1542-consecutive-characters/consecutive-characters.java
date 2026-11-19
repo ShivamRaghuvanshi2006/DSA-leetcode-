@@ -1,0 +1,1 @@
+class Solution { public int maxPower(String s){ int b=1,m=1; for(int i=1;i<s.length();i++){ if(s.charAt(i)==s.charAt(i-1)) b++; else b=1; m=Math.max(m,b); } return m; } }
