@@ -1,0 +1,1 @@
+class Solution { public int isPrefixOfWord(String s,String w){ String[] a=s.split(" "); for(int i=0;i<a.length;i++) if(a[i].startsWith(w)) return i+1; return -1; } }
