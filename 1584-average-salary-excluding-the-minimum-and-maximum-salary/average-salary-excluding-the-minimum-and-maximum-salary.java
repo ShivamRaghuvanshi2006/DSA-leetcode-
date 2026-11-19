@@ -1,0 +1,1 @@
+class Solution { public double average(int[] s){ int mn=1000000,mx=0,sum=0; for(int x:s){ mn=Math.min(mn,x); mx=Math.max(mx,x); sum+=x; } return (double)(sum-mn-mx)/(s.length-2); } }
