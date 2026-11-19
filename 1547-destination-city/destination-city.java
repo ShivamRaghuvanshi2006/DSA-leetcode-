@@ -1,0 +1,1 @@
+import java.util.*; class Solution { public String destCity(List<List<String>> p){ Set<String> s=new HashSet<>(); for(List<String> x:p) s.add(x.get(0)); for(List<String> x:p) if(!s.contains(x.get(1))) return x.get(1); return ""; } }
