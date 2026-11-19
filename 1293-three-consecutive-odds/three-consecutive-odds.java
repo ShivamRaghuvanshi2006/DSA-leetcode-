@@ -1,0 +1,1 @@
+class Solution { public boolean threeConsecutiveOdds(int[] a){ int c=0; for(int x:a){ if(x%2==1){ c++; if(c==3) return true; } else c=0; } return false; } }
