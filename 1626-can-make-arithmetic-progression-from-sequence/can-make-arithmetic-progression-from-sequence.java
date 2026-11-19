@@ -1,0 +1,1 @@
+import java.util.*; class Solution { public boolean canMakeArithmeticProgression(int[] a){ Arrays.sort(a); int d=a[1]-a[0]; for(int i=2;i<a.length;i++) if(a[i]-a[i-1]!=d) return false; return true; } }
