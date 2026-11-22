@@ -1,0 +1,3 @@
+class Solution {
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) { int oc=image[sr][sc]; if(oc==color) return image; int m=image.length,n=image[0].length; java.util.ArrayDeque<int[]> st=new java.util.ArrayDeque<>(); st.push(new int[]{sr,sc}); image[sr][sc]=color; int[][] d={{1,0},{-1,0},{0,1},{0,-1}}; while(!st.isEmpty()){int[] p=st.pop(); for(int[] dd:d){int nr=p[0]+dd[0],nc=p[1]+dd[1]; if(nr>=0&&nr<m&&nc>=0&&nc<n&&image[nr][nc]==oc){image[nr][nc]=color; st.push(new int[]{nr,nc});}}} return image; }
+}
