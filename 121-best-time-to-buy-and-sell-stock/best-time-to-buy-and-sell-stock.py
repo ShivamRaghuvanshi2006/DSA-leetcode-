@@ -1,8 +1,8 @@
 class Solution:
     def maxProfit(self, prices):
-        mn = float('inf')
-        best = 0
+        mn=float('inf')
+        ans=0
         for p in prices:
-            mn = min(mn, p)
-            best = max(best, p - mn)
-        return best
+            mn=min(mn,p)
+            ans=max(ans,p-mn)
+        return ans
